@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="325dp"
+                android:layout_height="258dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/user"
+
+                />
+
+            <TextView
+                android:id="@+id/view_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagen"
+                android:padding="20dp"
+                android:text="Nombre"
+                android:textColor="@color/purple_700" />
+
+            <EditText
+                android:id="@+id/text_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_nombre"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="Nombre"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/view_clave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_nombre"
+                android:text="Clave"
+                android:textColor="@color/purple_700" />
+
+            <EditText
+                android:id="@+id/text_clave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_clave"
+                android:padding="16dp"
+                android:hint="Calve"
+                android:inputType="textPassword"
+
+                />
+
+            <TextView
+                android:id="@+id/view_r_clave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_clave"
+                android:text="Repetir clave"
+                android:textColor="@color/purple_700" />
+
+            <EditText
+                android:id="@+id/text_R_clave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_r_clave"
+                android:hint="Debe ser la misma que la anterior"
+                android:padding="16dp"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/text_resultado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_R_clave"
+                android:textSize="26dp" />
+
+            <Button
+                android:id="@+id/btn_registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_resultado"
+                android:text="Registrar" />
+
+        </RelativeLayout>
+</layout>
